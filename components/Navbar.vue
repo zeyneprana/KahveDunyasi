@@ -36,7 +36,7 @@
             <div class="col-3">
               <img height="25"
                 src="https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static//img/icons/icon-user.svg" />
-              <button class="navbarLink btn btn-sm ">GİRİŞ</button>
+              <button @click="goToRegisterPage" class="navbarLink btn btn-sm ">GİRİŞ</button>
             </div>
             <div class="col-3">
               <img height="25"
@@ -121,3 +121,17 @@
 </div>
 </header>
 </template>
+
+<script>
+export default {
+  
+
+  methods: {
+    goToRegisterPage(){
+
+      this.$router.push({path:"/register"})
+
+    }
+  },
+}
+</script>

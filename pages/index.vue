@@ -40,9 +40,10 @@
       </div>
 
       <InfoCard />
+
+      <MobileApp />
       
-      
-      
+      <Footer />
 
     </div>
   </div>
