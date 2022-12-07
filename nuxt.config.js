@@ -33,6 +33,10 @@ export default {
       rel: 'stylesheet',
       href: '/js/vuetify.js'
     },
+    {
+      rel: 'stylesheet',
+      href: '/css/index.css'
+    },
     ]
   },
 

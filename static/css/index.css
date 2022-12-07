@@ -1,0 +1,23 @@
+div#kargoField{
+
+    background-color: rgb(247,248,249);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+input#searchBar{
+
+    height: 50px ;
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static//img/icons/icon-search.svg") no-repeat;
+    background-position: right;
+    background-size: 20px;
+    margin-right: 10px;
+
+}
+
+button.navbarLink{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #6c0c33;
+
+}
