@@ -8097,6 +8097,8 @@ fieldset:disabled .btn {
     top: 50% !important
 }
 
+
+
 .top-100 {
     top: 100% !important
 }
@@ -8107,6 +8109,10 @@ fieldset:disabled .btn {
 
 .bottom-50 {
     bottom: 50% !important
+}
+
+.bottom-75{
+    bottom: 75% !important 
 }
 
 .bottom-100 {

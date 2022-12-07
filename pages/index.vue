@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="container-fluid">
 
       <KargoField />
@@ -10,35 +11,43 @@
 
       <CampaignCard />
 
-      <div class="row mt-5">
 
-        <div class="d-flex justify-content-center">
-          <h5 class="border-3 border-dark border-bottom">Çok Satanlar</h5>
-        </div>
+      <Title title="Çok Satanlar" />
+      <ItemSlider />
 
-      </div>
 
-      <div class="row mb-4 mt-4">
+      <Title title="Kampanyalı Ürünler" />
+      <ItemSlider />
 
-        <ItemSlider />
+      <Knowledge />
 
-      </div>
 
       <div class="row mt-5">
 
         <div class="d-flex justify-content-center">
-          <h5 class="border-3 border-dark border-bottom">Kampanyalı Ürünler</h5>
+          <h4 class="fw-bold fs-1">Blog</h4>
         </div>
- 
-
-        <ItemSlider />
 
       </div>
+
+      <div class="row">
+
+
+        <BlogSlider />
+
+
+
+      </div>
+
+      <InfoCard />
+      
+      
+      
 
     </div>
   </div>
 </template>
-
+ 
 
 <script>
 export default {
