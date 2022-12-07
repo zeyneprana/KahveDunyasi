@@ -21,3 +21,45 @@ button.navbarLink{
     color: #6c0c33;
 
 }
+
+div#KahveCard{
+
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static/img/home-categories/coffee.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+div#CikolataCard{
+
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static/img/home-categories/chocolate.jpg?v=2") no-repeat;
+    background-size: cover;
+
+}
+
+div#AksesuarCard{
+
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static/img/home-categories/accesory.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+div#FitLezzetlerCard{
+
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static/img/home-categories/diet.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+div#FirsatlarCard{
+
+    background: url("https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static/img/home-categories/promo.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
