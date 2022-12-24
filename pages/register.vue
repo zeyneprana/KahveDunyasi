@@ -92,7 +92,6 @@ export default {
         await setDoc(doc(db, "users",user.email), {
           ...user,
           basket:[],
-          favorites:[]
         });
 
         setTimeout(() => {

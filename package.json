@@ -18,6 +18,7 @@
     "vuetify": "^2.6.12"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/vuetify": "^1.12.3"
   }
 }

@@ -33,15 +33,15 @@
                 src="https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static//img/icons/icon-gift-red.svg" />
               <button class="navbarLink btn btn-sm ">KURUMSAL HEDİYELER</button>
             </div>
-            <div class="col-3">
+            <div v-if="!this.getLoginInfo" class="col-3">
               <img height="25"
                 src="https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static//img/icons/icon-user.svg" />
               <button @click="goToRegisterPage" class="navbarLink btn btn-sm ">GİRİŞ</button>
             </div>
-            <div class="col-3">
+            <div v-if="this.getLoginInfo" class="col-3">
               <img height="25"
                 src="https://img-kahvedunyasi.mncdn.com/kahvedunyasi/static//img/icons/icon-basket.svg" />
-              <button class="navbarLink btn btn-sm ">SEPET</button>
+              <button class="navbarLink btn btn-sm "><router-link :to="{path:'/basket'}" class="text-decoration-none navbarLink" style="color: #6c0c33;">SEPET</router-link></button>
             </div>
           </div>
 
@@ -123,15 +123,23 @@
 </template>
 
 <script>
+
+import {mapGetters} from "vuex"
+
 export default {
-  
+
 
   methods: {
     goToRegisterPage(){
 
-      this.$router.push({path:"/register"})
+      this.$router.push({path:"/login"})
 
     }
   },
+
+  computed:{
+
+    ...mapGetters(['getLoginInfo'])
+  }
 }
 </script>
