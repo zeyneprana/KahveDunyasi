@@ -42,19 +42,28 @@
       <InfoCard />
 
       <MobileApp />
-      
+
       <Footer />
 
     </div>
   </div>
 </template>
- 
+
 
 <script>
 export default {
 
   data() {
     return {
+
+      data:[
+      {src:"",productName:"",unitPrice:0},
+      {src:"",productName:"",unitPrice:0},
+      {src:"",productName:"",unitPrice:0},
+      {src:"",productName:"",unitPrice:0},
+      {src:"",productName:"",unitPrice:0},
+      {src:"",productName:"",unitPrice:0},
+      ]
 
     }
   },
