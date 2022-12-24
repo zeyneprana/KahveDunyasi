@@ -12,12 +12,12 @@
                                 <form>
 
                                     <div class="form-outline mb-4">
-                                        <v-text-field label="Email" type="email" :rules="rules" hide-details="auto">
+                                        <v-text-field label="Email" type="email" hide-details="auto">
                                         </v-text-field>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <v-text-field label="Şifre" type="password" :rules="rules" hide-details="auto">
+                                        <v-text-field label="Şifre" type="password" hide-details="auto">
                                         </v-text-field>
                                     </div>
 
