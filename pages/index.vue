@@ -13,11 +13,11 @@
 
 
       <Title title="Çok Satanlar" />
-      <ItemSlider />
+      <ItemSlider :data="data" />
 
 
       <Title title="Kampanyalı Ürünler" />
-      <ItemSlider />
+      <ItemSlider :data="data" />
 
       <Knowledge />
 
@@ -51,22 +51,29 @@
 
 
 <script>
+
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "~/firebase";
+
+
 export default {
 
   data() {
     return {
-
-      data:[
-      {src:"",productName:"",unitPrice:0},
-      {src:"",productName:"",unitPrice:0},
-      {src:"",productName:"",unitPrice:0},
-      {src:"",productName:"",unitPrice:0},
-      {src:"",productName:"",unitPrice:0},
-      {src:"",productName:"",unitPrice:0},
-      ]
-
+      data: []
     }
   },
+
+  async mounted() {
+    const querySnapshot = await getDocs(collection(db, "products"));
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      this.data.push(doc.data())
+    });
+  },
+
+
+
 
 }
 </script>
